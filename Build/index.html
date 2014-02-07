@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+        <!-- Hammer reload -->
+          <script>
+            setInterval(function(){
+              try {
+                if(typeof ws != 'undefined' && ws.readyState == 1){return true;}
+                ws = new WebSocket('ws://'+(location.host || 'localhost').split(':')[0]+':35353')
+                ws.onopen = function(){ws.onclose = function(){document.location.reload()}}
+                ws.onmessage = function(){
+                  var links = document.getElementsByTagName('link'); 
+                    for (var i = 0; i < links.length;i++) { 
+                    var link = links[i]; 
+                    if (link.rel === 'stylesheet' && !link.href.match(/typekit/)) { 
+                      href = link.href.replace(/((&|\?)hammer=)[^&]+/,''); 
+                      link.href = href + (href.indexOf('?')>=0?'&':'?') + 'hammer='+(new Date().valueOf());
+                    }
+                  }
+                }
+              }catch(e){}
+            }, 1000)
+          </script>
+        <!-- /Hammer reload -->
+      
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Home</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width">
+
+        <link href="assets/favicon.ico" rel="shortcut icon">
+        <link href="assets/apple-touch-icon.png" rel="apple-touch-icon">
+        
+        <script src="assets/js/vendor/modernizr-2.6.2.min.js"></script>
+        
+        <script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+
+        <link rel='stylesheet' href='assets/css/main.css'>
+    </head>
+    <body class="home">
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+        <header>
+            <a href="#"><h1 class="logo">CLEAR</h1></a>
+        </header>
+        <nav>
+            <ul>
+                <li class='current'><a class='current' href="index.html">Home</a></li>
+                <li><a href="#">4G Technology</a></li>
+                <li><a href="#">Mobile Broadband</a></li>
+                <li><a href="#">Pricing & Plans</a></li>
+                <li><a href="#">Coverage</a></li>
+                <li><a href="#">Reviews</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">My Account</a></li>
+            </ul>
+        </nav>
+
+
+		<div class="wrapper clearfix">
+			<div class="wrap prop">
+				<h1>Your Super Fast Take-It-With-You Internet</h1>
+				<p>Plans start at just $35/mo.</p>
+			</div>
+		</div>
+		<div class="wrapper clearfix offer">
+			<div class="wrap">
+				<div class="col-left">
+					<div class="call">Call Now to get <br>online by Tomorrow <br><span>1-877-670-9168</span></div>
+					<div class="plans">
+						<div class="container">
+							<h3>4G Home Basic</h3>
+							<p>Get 4G internet for your home or business. No installation appointments.</p>
+							<p class="price">Just $35/mo**</p>
+						</div>
+					</div>
+					<div class="plans">
+						<div class="container">
+							<h3>4G Home + Mobile</h3>
+							<p>Two plans – one LOW price!<br>Get super fast internet at home and across your city.</p>
+							<p class="price">Just $60/mo**</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-right">
+					<div class="product"></div>
+					<div class="availability">
+						<p>Check availability in your area</p>
+						<form>
+						   <input type="search" name="" placeholder="enter your zip code" />
+						   <input type="submit" value="check now" class="button" />
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="wrapper clearfix overview">
+			<div class="wrap">
+				<div class="action col-right" id="sidebar">
+					<h2>Call Now<br><strong>1-877-670-9168</strong><br>or Let Us Call You</h2>
+					<p>Simply fill out the form below and one of our experts will call you.</p>
+					<form action="" class="" method="post" novalidate="">
+						
+							<label for="name">Name</label>
+							<input type="text" name="name" id="name" required="required">
+						
+						   <label for="phone_number">Phone number</label>
+						   <input type="text" name="phone_number" id="field5" required="required">
+						
+						   <label for="zip_code">
+						        Zip Code
+						   </label>
+						   <input type="text" name="zip_code" id="zip_code" required="required">
+
+						   <input type="submit" value="Submit" class="button">
+						
+				     </form>
+				</div>
+				<div class="col-left" id="main">
+					<section class="clearfix">
+						<ul class="benefits">
+							<li>
+								<a href="#" class="block">
+									<div >
+										<div class="icon setup"></div>
+										<h3>Easy<br>Setup</h3>
+										<p>Learn more</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block affor">
+									<div >
+										<div class="icon affor"></div>
+										<h3>Afforable<br>plans</h3>
+										<p>Learn more</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block">
+									<div >
+										<div class="icon get"></div>
+										<h3>Get Online By Tomorrow</h3>
+										<p>Learn more</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block">
+									<div >
+										<div class="icon indus"></div>
+										<h3>Industry-Leading Technology</h3>
+										<p>Learn more</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block">
+									<div >
+										<div class="icon take"></div>
+										<h3>Take-It-With-You Internet</h3>
+										<p>Learn more</p>
+									</div>
+								</a>
+							</li>
+							<li>
+								<a href="#" class="block">
+									<div >
+										<div class="icon better"></div>
+										<h3>Better<br>Coverage</h3>
+										<p>Learn more</p>
+									</div>
+								</a>
+							</li>
+						</ul>			
+					</section>
+					<section class="description">
+						<h1>CLEAR Is Here.</h1>
+						<p>Always on the go? Your 4G internet solution has arrived. CLEAR is the ultimate take-it-with you internet service.  With CLEAR, you can get online and surf at super fast speeds at home and on the go.</p>
+						<p>If you travel beyond your city, CLEAR has a solution for that, too. With the CLEAR 4G+ USB modem, you can access 4G internet service in CLEAR coverage areas and automatically  connect to the 3G network when you’re in a town that isn’t backed by CLEAR (don’t forget to ask yourself why you’re in a city that doesn’t have CLEAR internet).</p>
+						<h2>Get Started with CLEAR</h2>
+						<p>If you’re ready to make the switch to CLEAR, you’re in luck. We make it easy. Really easy.</p>
+						<ul class="steps">
+							<li class="s1"><span>Decide what you need.</span> CLEAR offers internet services that make sense for your lifestyle. Visit our <a href="#">Pricing and Plans</a> page to select Home Internet, Mobile Internet or CLEAR Voice – or get all three!</li>
+							<li class="s2"><span>Order CLEAR.</span> Place your order today and you can get online as soon as tomorrow. With overnight shipping and plug and play setup, we help you get started – fast. But hurry. To get CLEAR tomorrow, you have to place your order by 3:30 p.m. (EST) today.</li>
+							<li class="s3"><span>Get Online.</span> Plug and play setup is as simple as it sounds. We send you the CLEAR modem. You plug it in and start surfing the internet. With CLEAR, there are never any installation appointments. You do it all yourself and skip the headaches.  !</li>
+						</ul>
+						<h2>Get the Scoop on CLEAR</h2>
+						<p>Want to see what our customers have to say? Check out these <a href="#">CLEAR Reviews</a> to learn even more about super fast take-it-with-you internet. </p>
+					</section>
+				</div>
+	        </div>
+        </div>
+        <div id="end">Call Today. Get Online By Tomorrow!</div>
+            <footer></footer>
+
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../assets/js/jquery.sticky-kit.min.js"></script>
+        <script>window.jQuery || document.write('<script src="../assets/js/vendor/jquery-1.9.1.min.js"><\/script>')</script>
+
+        <!-- scripts -->
+        <script src='assets/js/plugins.js'></script>
+
+        <!--<script>
+            var _gaq=[['_setAccount','UA-XXXXX-X'],['_trackPageview']];
+            (function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+            g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+            s.parentNode.insertBefore(g,s)}(document,'script'));
+        </script>-->
+
+    </body>
+</html>

@@ -1,0 +1,35 @@
+.wrapper {
+	.wrap {
+		width: 1024px;
+		margin: 0 auto;
+		position: relative;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+
+	}
+
+	.col-left {
+		float: left;
+		width: 580px;
+		margin-left: 60px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+
+	.col-right {
+		float: right;
+		width: 300px;
+		margin-right: 60px;
+		-moz-box-sizing: border-box;
+		-webkit-box-sizing: border-box;
+		box-sizing: border-box;
+	}
+}
+
+@media only screen and (device-width: 768px) {
+  html {
+  	width: 150%;
+  }
+}

@@ -1,0 +1,160 @@
+/* Typography
+----------------------------------------- */
+
+*{
+    box-sizing: border-box;
+}
+
+html,
+button,
+input,
+select,
+textarea {
+    color: $grey-dark;
+}
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+textarea {
+    resize: vertical;
+}
+
+.chromeframe {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+body { 
+    font: 14px/19px $body-font;
+    color: $grey-dark;
+    font-smooth: always; 
+    -webkit-font-smoothing: subpixel-antialiased; // smooth fonts
+    text-shadow: 0 1px 0 rgba(0,0,0,0.01); // smooth fonts
+    background: #fff;
+}
+
+h1,h2,h3,h4,h5,h6 { 
+    line-height: 1.125em; 
+    margin:0 0 .675em 0;
+    color: $green;
+    font-family: $heading-bold;
+    font-style: normal;
+    font-weight: normal;
+    font-stretch: normal;
+}
+
+h1 { 
+    font-size: em(45, 15);
+}
+
+h2 { 
+    font-size: em(34, 15);
+}
+
+h3 { 
+    font-size: em(30, 15);
+}
+
+h4 { 
+    font-size: em(24, 15);
+}
+
+h5 { 
+    font-size: em(21, 15);
+}
+
+h6 { 
+    font-size: em(18, 15);
+}
+
+a{
+    text-decoration: none;
+    color: $purple;
+    &:hover{
+        
+    }
+}
+
+p { 
+    margin-bottom: 1em;
+}
+
+small, .small { 
+    font-size: 0.750em;
+}
+
+strong { 
+    font-weight: bold;
+}
+
+em { 
+    font-style: italic;
+}
+.center{
+    text-align: center;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Bold';
+  src: url('GothamRnd-Bold.eot'); /* IE9 Compat Modes */
+  src: url('GothamRnd-Bold.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('GothamRnd-Bold.woff') format('woff'), /* Modern Browsers */
+       url('GothamRnd-Bold.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GothamRnd-Bold.svg#cf294c6136807d0e69a971e863b3cd88') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  700;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Book';
+  src: url('GothamRnd-Book.eot'); /* IE9 Compat Modes */
+  src: url('GothamRnd-Book.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('GothamRnd-Book.woff') format('woff'), /* Modern Browsers */
+       url('GothamRnd-Book.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GothamRnd-Book.svg#21661efc977bfcfec5c6c16307c05ceb') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Gotham Rounded Medium';
+  src: url('GothamRnd-Medium.eot'); /* IE9 Compat Modes */
+  src: url('GothamRnd-Medium.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('GothamRnd-Medium.woff') format('woff'), /* Modern Browsers */
+       url('GothamRnd-Medium.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('GothamRnd-Medium.svg#13af3003001cba3805884d1b06b023c9') format('svg'); /* Legacy iOS */
+       
+  font-style:   normal;
+  font-weight:  400;
+}

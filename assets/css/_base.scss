@@ -1,0 +1,34 @@
+@import 
+    'normalize';
+
+// orange default
+$theme-color: #fff; // dark #b84712
+$accent-color: darken($theme-color, 10); // That is, 10% darker than the brand-color.
+
+// other colors
+
+// fonts
+$body-font: Helvetica, 'Helvetica Neue', sans-serif;
+$heading-bold: 'Gotham Rounded Bold', $body-font;
+$heading-medium: 'Gotham Rounded Medium', $body-font;
+$heading-book: 'Gotham Rounded Book', $body-font;
+
+
+// Type color
+$grey: #edeeee;
+$grey-light: #ddd;
+$grey-dark: #3b3a3a;
+$green: #61b327;
+$green-light: #dcff39;
+$purple: #a51e6e;
+$purple-light: #b9508e;
+
+
+/* Custom mixins & Placeholders */
+
+// border-radius
+$radius: 5px;
+
+@mixin border-radius($radius) {
+    border-radius: $radius;
+}

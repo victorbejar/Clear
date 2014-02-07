@@ -1,0 +1,475 @@
+/* Header
+----------------------------------------- */
+
+header {
+  height: 120px;
+
+  .logo {
+    width: 199px;
+    height: 82px;
+    background-image: url('../assets/img/logo.jpg');
+    overflow: hidden;
+    text-indent: -999px;
+    margin: 0 auto;
+    position: relative;
+    top: 25px;
+  }
+
+}
+
+
+/* Nav
+----------------------------------------- */
+
+nav {
+  background-color: $grey;
+  height:60px;
+
+  a {
+    color: $grey-dark;
+  }
+
+}
+ 
+nav ul {
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: 1024px;
+  margin: 0 auto;
+  
+
+  li:last-child {
+    float: right;
+    border-left: solid 1px $grey-light;
+
+    a {
+      color: $purple;
+    }
+
+    a:hover {
+      background-color: $purple;
+    }
+
+  }
+
+  li:first-child {
+    border-left: 1px solid $grey-light;
+  }
+}
+ 
+nav ul li {
+  display: block;
+  position: relative;
+  float: left;
+  border-right: 1px solid $grey-light;
+}
+ 
+nav ul li a {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  padding: 7px 15px 3px 15px;
+  margin-left: 1px;
+  white-space: nowrap;
+  height:60px;
+  text-align: center;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+ 
+}
+ 
+nav ul li a:hover { 
+  background: $purple;
+  color: #fff;
+}
+ 
+
+/* Prop
+----------------------------------------- */
+
+.prop {
+  height: 141px;
+  padding: 30px 60px 0 60px;
+
+  h1, p {
+    color: $purple;
+  }
+
+  h1 {
+    font-family: $heading-medium;
+    color: $purple;
+    margin: 0;
+    font-size: 43px;
+    letter-spacing: -1px;
+  }
+
+  p {
+    margin: 0;
+    font-size: 24px;
+  }
+}
+
+
+/* Offer
+----------------------------------------- */
+
+.offer {
+  height: 458px;
+  background-color: $green;
+  color: #fff;
+
+
+  .call {
+    text-transform: uppercase;
+    font-family: $heading-book;
+    font-size: 38px;
+    line-height: 43px;
+    margin: 46px 0 40px 0;
+
+
+    span {
+      font-family: $heading-bold;
+      display: bold;
+    }
+
+  }
+
+  .plans {
+    width: 268px;
+    height: 200px;
+    display: inline-block;
+    border: solid 3px #fff;
+    @include border-radius(10px);
+    float: left;
+
+    h3 {
+      font-size: 20px;
+      color: $green-light;
+      text-transform: uppercase;
+      font-family: $heading-book;
+      text-align: center;
+      line-height: 20px;
+      padding: 14px 5px;
+      border-bottom: solid 3px #fff;
+    }
+
+    p {
+      margin: 20px 30px;
+    }
+
+    .price {
+      color: $green-light;
+      font-family: $heading-book;
+      font-size: 20px;
+    }
+  }
+
+  .plans:last-child {
+      margin-left: 25px;
+    }
+
+  .product {
+    width: 191px;
+    height: 317px;
+    background-image: url('../assets/img/modem.png');
+    position: relative;
+    left: 40px;
+    margin-bottom: 30px;
+  }
+
+  .availability {
+
+    p {
+      background: url('../assets/img/icons.png') no-repeat -450px 0px;
+      background-repeat: no-repeat;
+      padding-left: 70px;
+      font-size: 20px;
+      font-family: $heading-book;
+      text-transform: uppercase;
+      line-height: 22px;
+    }
+    
+    form {
+      position: relative;
+      
+      input {
+        background-color: #fff;
+        height: 50px;
+        @include border-radius(8px 0px 0px 8px);
+        border: none;
+        display: inline-block;
+        float: left;
+        color: $green;
+        padding: 0 20px;
+      }
+      
+      .button {
+        background-color: $purple;
+        color: #fff;
+        @include border-radius(0px 8px 8px 0px);
+        font-family: $heading-medium;
+        font-size: 12px;
+        text-transform: uppercase;
+        padding: 0 10px;
+      }
+
+      .button:hover {
+        background-color: $purple-light;
+      }
+    }  
+  }
+
+  .col-right {
+    position: relative;
+    top: -46px;
+  }
+
+}
+
+
+/* Description
+----------------------------------------- */
+
+.overview {
+  margin-top: 25px;
+  display: block;
+  height: 100%;
+
+ ul.benefits {
+    padding: 0;
+    margin: 0;
+    
+    li {
+      width: 268px;
+      height: 225px;
+      display: inline-block;
+      float: left;
+      margin-top: 25px;
+
+      a {
+        -webkit-duration: .2s;
+        -moz-duration: .2s;
+        -o-duration: .2s;
+        transition-duration: .2s;
+
+        border: solid 3px $grey-light;
+        @include border-radius(10px);
+        display: block;
+        width: 100%;
+        height: 100%;
+
+        div {
+          text-align: center;
+
+          .icon {
+            width: 74px;
+            height: 74px;
+            margin: 32px auto 15px auto;
+          }
+
+          .setup {
+            background: url('../assets/img/icons.png') no-repeat 0px 0px;
+          }
+
+          .affor {
+            background: url('../assets/img/icons.png') no-repeat -74px 0px;
+          }
+
+          .get {
+            background: url('../assets/img/icons.png') no-repeat -148px 0px;
+          }
+
+          .indus {
+            background: url('../assets/img/icons.png') no-repeat -222px 0px;
+          }
+
+          .take {
+            background: url('../assets/img/icons.png') no-repeat -296px 0px;
+          }
+
+          .better {
+            background: url('../assets/img/icons.png') no-repeat -370px 0px;
+          }
+
+          h3 {
+            font: 20px/22px $heading-bold;
+            text-transform: uppercase;
+            color: $grey-dark;
+          }
+
+          p {
+            font: 12px/12px $heading-medium;
+            text-transform: uppercase;
+            color: $purple;
+          }
+        }
+      }
+
+      a:hover {
+        background-color: $purple;
+        border: solid 3px $purple;
+        box-shadow: 0 0 0 5px $purple;
+
+        h3, p {
+          color: #fff;
+        }
+      }
+    }
+
+    li:nth-child(even) {
+      margin-left: 25px;
+    }
+
+  }
+
+  .description {
+    margin: 50px 0;
+    padding: 0 25px;
+
+    h1 {
+      margin-bottom: 20px;
+    }
+    
+    h2 {
+      margin-top: 40px;
+    }
+
+    ul.steps {
+      padding: 20px 0 0 0;
+
+      li {
+        margin-bottom: 20px;
+        list-style: none;
+        padding-left: 80px;
+        min-height: 59px;
+      }
+
+      .s1 {
+        background: url('../assets/img/s1.png') no-repeat 0px 0px;
+      }
+
+      .s2 {
+        background: url('../assets/img/s2.png') no-repeat 0px 0px;
+      }
+
+      .s3 {
+        background: url('../assets/img/s3.png') no-repeat 0px 0px;
+      }
+
+    }
+
+    span {
+      font-family: 14px;
+      font-family: $heading-medium;
+      text-transform: uppercase;
+      color: $green;
+    }
+
+  }
+}
+
+/* Sidebar
+----------------------------------------- */
+.action {
+  border: solid 3px $purple;
+  @include border-radius(10px);
+  display: block;
+  margin-top: 25px;
+  color: $purple;
+  text-align: center;
+  padding: 26px 30px;
+  background-color: #fff;
+
+  h2 {
+    font-size: 20px;
+    line-height: 30px;
+    font-family: $heading-book;
+    text-transform: uppercase;
+    color: $purple;
+
+    strong {
+      font-size: 28px;
+      font-family: $heading-bold;
+    }
+  }
+
+  form {
+    display: block;
+    height: 350px;
+    text-align: left;
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    input {
+      width: 224px;
+      border: none;
+      background-color: #f7e9f0;
+      @include border-radius(8px);
+      height: 50px;
+      margin-bottom: 15px;
+      padding: 0 20px;
+      -moz-box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .button {
+      background-color: $purple;
+      color: #fff;
+      @include border-radius(8px);
+      font-family: $heading-medium;
+      font-size: 12px;
+      text-transform: uppercase;
+      margin-top: 20px;
+    }
+    
+    .button:hover {
+      background-color: $purple-light;
+    }
+  }
+}
+
+.sticky {
+  width: 300px !important;
+  height: 574px !important;
+}
+
+
+/* End
+----------------------------------------- */
+#end {
+  height: 100px;
+  font-family: $heading-medium;
+  color: $purple;
+  margin: 0;
+  font-size: 43px;
+  line-height: 48px;
+  letter-spacing: -1px;
+  text-align: center;
+  background-color: $grey;
+  margin-bottom: 50px;
+  padding-top: 25px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
